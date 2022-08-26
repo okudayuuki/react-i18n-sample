@@ -1,0 +1,5 @@
+{
+  "hello": "Hello",
+  "date": "Today is  {{date}}.",
+  "colored": "Next characters color is <1>Green</1>. And next, <3>Orange</3>"
+}
