@@ -8,19 +8,31 @@ function App() {
         i18n.changeLanguage(lng);
     };
 
-  return (
-    <div className="App">
-        <h1>{t('hello')}</h1>
-        <p>
-        <Trans i18nKey={"date"} >本日の日付は{{date: (new Date()).toDateString()}}です。</Trans>
-        </p>
-        <p>
-        <Trans i18nKey={"colored"}>次の文字の色は<span style={{color: "green"}}>緑色</span>です。次は、<span style={{color:"orange"}}>オレンジ</span>です。</Trans>
-        </p>
-        <button onClick={() => changeLanguage('ja')}>ja</button>
-        <button onClick={() => changeLanguage('en')}>en</button>
-    </div>
-  )
+    return (
+        <div className="App">
+            <h1>{t('hello')}</h1>
+            <p>
+                <Trans i18nKey={"date"}>本日の日付は{{date: (new Date()).toDateString()}}です。</Trans>
+            </p>
+            <p>
+                <Trans i18nKey={"colored"}>次の文字の色は<span style={{color: "green"}}>緑色</span>です。次は、<span
+                    style={{color: "orange"}}>オレンジ</span>です。</Trans>
+            </p>
+            <p>
+                <Trans i18nKey={"nest.hoge"}/>
+            </p>
+            <p>
+                <Trans i18nKey={"gameResult"}>
+                    {{color: t("white")}}
+                        <span style={{color: 'green', textAlign: 'left'}}>
+                            {{score: 100}}
+                        </span>
+                </Trans>
+            </p>
+            <button onClick={() => changeLanguage('ja')}>ja</button>
+            <button onClick={() => changeLanguage('en')}>en</button>
+        </div>
+    )
 }
 
 export default App

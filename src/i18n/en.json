@@ -1,5 +1,11 @@
 {
+  "white": "White",
+  "black": "Black",
   "hello": "Hello",
   "date": "Today is  {{date}}.",
-  "colored": "Next characters color is <1>Green</1>. And next, <3>Orange</3>"
+  "colored": "Next characters color is <1>Green</1>. And next, <3>Orange</3>",
+  "nest": {
+    "hoge": "foofoo<br/>barbar"
+  },
+  "gameResult": "<1>{{score}}</1>Moku {{color}}"
 }

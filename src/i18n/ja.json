@@ -1,5 +1,11 @@
 {
+  "white": "白",
+  "black": "黒",
   "hello": "こんにちは",
   "date": "本日の日付は {{date}} です。",
-  "colored": "次の文字は<1>緑色</1>です。次は、<3>オレンジ</3>です。"
+  "colored": "次の文字は<1>緑色</1>です。次は、<3>オレンジ</3>です。",
+  "nest": {
+    "hoge": "hogehoge<br/>fugafuga"
+  },
+   "gameResult": "{{color}}<1>{{score}}</1>目"
 }
