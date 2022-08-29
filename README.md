@@ -9,7 +9,7 @@
 
 - https://www.i18next.com/translation-function/formatting
 
-### 翻訳ファイルの書き方
+## 翻訳ファイルの書き方
 
 #### シンプルな翻訳
 
