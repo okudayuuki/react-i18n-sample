@@ -2,8 +2,9 @@
   "white": "White",
   "black": "Black",
   "hello": "Hello",
-  "date": "Today is  {{date}}.",
-  "colored": "Next characters color is <1>Green</1>. And next, <3>Orange</3>",
+  "date": "Today is  {{date, datetime}}.",
+  "date2": "If you just want to embed the value, !{{date, datetime}}! the original statement is unnecessary in jsx.。",
+  "colored": "Next characters color is <1>Green</1>. Suddenly count {{val}}! And next, <5>Orange</5>",
   "nest": {
     "hoge": "foofoo<br/>barbar"
   },

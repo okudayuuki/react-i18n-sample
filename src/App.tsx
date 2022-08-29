@@ -10,18 +10,35 @@ function App() {
 
     return (
         <div className="App">
+            {/* シンプルな翻訳文 */}
             <h1>{t('hello')}</h1>
             <p>
-                <Trans i18nKey={"date"}>本日の日付は{{date: (new Date()).toDateString()}}です。</Trans>
+                {/* 値を埋め込む翻訳文 */}
+                {t("date", {date: new Date()})}
             </p>
             <p>
-                <Trans i18nKey={"colored"}>次の文字の色は<span style={{color: "green"}}>緑色</span>です。次は、<span
-                    style={{color: "orange"}}>オレンジ</span>です。</Trans>
+                {/* Transを使った値の埋め込み */}
+                {/* ただ埋め込むだけなら`t`を使った方が良い */}
+                <Trans i18nKey={"date2"}>{{date: new Date()}}</Trans>
             </p>
             <p>
+                {/* 翻訳文の一部にtagを嚙ませたい場合 */}
+                <Trans i18nKey={"colored"}>
+                    次の文字の色は
+                    <span style={{color: "green"}}>緑色</span>
+                    です。唐突なカウント
+                    {{val: 100}}
+                    ！ 次は、
+                    <span style={{color: "orange"}}>オレンジ</span>
+                    です。
+                </Trans>
+            </p>
+            <p>
+                {/* 翻訳JSONがネストしている場合 */}
                 <Trans i18nKey={"nest.hoge"}/>
             </p>
             <p>
+                {/* 文頭が埋め込みの値でも大丈夫 */}
                 <Trans i18nKey={"gameResult"}>
                     {{color: t("white")}}
                         <span style={{color: 'green', textAlign: 'left'}}>
