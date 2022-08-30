@@ -6,8 +6,10 @@
   "date2": "If you just want to embed the value, !{{date, datetime}}! the original statement is unnecessary in jsx.。",
   "colored": "Next characters color is <1>Green</1>. Suddenly count {{val}}! And next, <5>Orange</5>",
   "nest": {
-    "hoge": "foofoo<br/>barbar"
+    "hoge": "Nested JSON key"
   },
+  "withLf": "LF can not \n line feed",
+  "withBr": "BR can <br/> line feed",
   "gameResult": "<1>{{score}}</1>Moku {{color}}",
   "fruitToAction": "<2/> the <0/>",
   "fruit": {

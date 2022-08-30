@@ -37,6 +37,13 @@ function App() {
                 {/* 翻訳JSONがネストしている場合 */}
                 <Trans i18nKey={"nest.hoge"}/>
             </p>
+            <div>
+                {/* 改行２種 */}
+                <Trans i18nKey={"withLf"}/>
+            </div>
+            <div>
+                <Trans i18nKey={"withBr"}/>
+            </div>
             <p>
                 {/* 文頭が埋め込みの値でも大丈夫 */}
                 <Trans i18nKey={"gameResult"}>

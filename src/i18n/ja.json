@@ -6,8 +6,10 @@
   "date2": "値を埋め込むだけなら、！{{date, datetime}}！元の文はjsx内に不要。",
   "colored": "次の文字は<1>緑色</1>です。唐突なカウント{{val}}！ 次は、<5>オレンジ</5>です。",
   "nest": {
-    "hoge": "hogehoge<br/>fugafuga"
+    "hoge": "ネストされたJSONキー"
   },
+  "withLf": "LFは改行\n不可",
+  "withBr": "BRは改行<br/>可",
    "gameResult": "{{color}}<1>{{score}}</1>目",
   "fruitToAction": "<0/>を<2/>",
   "fruit": {
