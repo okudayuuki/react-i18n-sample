@@ -41,11 +41,25 @@ function App() {
                 {/* 文頭が埋め込みの値でも大丈夫 */}
                 <Trans i18nKey={"gameResult"}>
                     {{color: t("white")}}
-                        <span style={{color: 'green', textAlign: 'left'}}>
+                    <span style={{color: 'green', textAlign: 'left'}}>
                             {{score: 100}}
                         </span>
                 </Trans>
             </p>
+            <div>
+                <Trans i18nKey={"fruitToAction"}>
+                    <select>
+                        <option>{t("fruit.apple")}</option>
+                        <option>{t("fruit.orange")}</option>
+                        <option>{t("fruit.banana")}</option>
+                    </select>
+                    を
+                    <select>
+                        <option>{t("action.buy")}</option>
+                        <option>{t("action.sell")}</option>
+                    </select>
+                </Trans>
+            </div>
             <button onClick={() => changeLanguage('ja')}>ja</button>
             <button onClick={() => changeLanguage('en')}>en</button>
         </div>

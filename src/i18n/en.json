@@ -8,5 +8,15 @@
   "nest": {
     "hoge": "foofoo<br/>barbar"
   },
-  "gameResult": "<1>{{score}}</1>Moku {{color}}"
+  "gameResult": "<1>{{score}}</1>Moku {{color}}",
+  "fruitToAction": "<2/> the <0/>",
+  "fruit": {
+    "apple": "Apple",
+    "orange": "Orange",
+    "banana": "Banana"
+  },
+  "action": {
+    "buy": "Buy",
+    "sell": "Sell"
+  }
 }

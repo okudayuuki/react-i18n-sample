@@ -136,3 +136,52 @@ indexは`Trans`タグ内に書いたテンプレートの順序で決定する�
   "gameResult": "<1>{{score}}</1>Moku {{color}}"
 }
 ```
+
+##### タグで囲ってなくても同じ要領で埋め込める
+
+```jsx
+<div>
+    <Trans i18nKey={"fruitToAction"}>
+        <select> {/* 0 */}
+            <option>{t("fruit.apple")}</option>
+            <option>{t("fruit.orange")}</option>
+            <option>{t("fruit.banana")}</option>
+        </select>  {/* 0 */}
+        を  {/* 1 */}
+        <select>  {/* 2 */}
+            <option>{t("action.buy")}</option>
+            <option>{t("action.sell")}</option>
+        </select> {/* 2 */}
+    </Trans>
+</div>
+```
+
+```json
+{
+  "fruitToAction": "<0/>を<2/>",
+  "fruit": {
+    "apple": "りんご",
+    "orange": "オレンジ",
+    "banana": "バナナ"
+  },
+  "action": {
+    "buy": "買う",
+    "sell": "売る"
+  }
+}
+```
+
+```json
+{
+  "fruitToAction": "<2/> the <0/>",
+  "fruit": {
+    "apple": "Apple",
+    "orange": "Orange",
+    "banana": "Banana"
+  },
+  "action": {
+    "buy": "Buy",
+    "sell": "Sell"
+  }
+}
+```

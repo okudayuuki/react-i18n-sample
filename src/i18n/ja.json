@@ -8,5 +8,15 @@
   "nest": {
     "hoge": "hogehoge<br/>fugafuga"
   },
-   "gameResult": "{{color}}<1>{{score}}</1>目"
+   "gameResult": "{{color}}<1>{{score}}</1>目",
+  "fruitToAction": "<0/>を<2/>",
+  "fruit": {
+    "apple": "りんご",
+    "orange": "オレンジ",
+    "banana": "バナナ"
+  },
+  "action": {
+    "buy": "買う",
+    "sell": "売る"
+  }
 }
