@@ -10,6 +10,7 @@
   },
   "withLf": "LFは改行\n不可",
   "withBr": "BRは改行<br/>可",
+  "withLfAsVariable": "改行コードを変数として{{\n\n}}入れてみる",
    "gameResult": "{{color}}<1>{{score}}</1>目",
   "fruitToAction": "<0/>を<2/>",
   "fruit": {

@@ -10,6 +10,7 @@
   },
   "withLf": "LF can not \n line feed",
   "withBr": "BR can <br/> line feed",
+  "withLfAsVariable": "Insert line feed {{\n\n}} as variables",
   "gameResult": "<1>{{score}}</1>Moku {{color}}",
   "fruitToAction": "<2/> the <0/>",
   "fruit": {

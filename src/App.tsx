@@ -38,11 +38,14 @@ function App() {
                 <Trans i18nKey={"nest.hoge"}/>
             </p>
             <div>
-                {/* 改行２種 */}
+                {/* 改行3種 */}
                 <Trans i18nKey={"withLf"}/>
             </div>
             <div>
                 <Trans i18nKey={"withBr"}/>
+            </div>
+            <div>
+                <Trans i18nKey={"withLfAsVariable"}/>
             </div>
             <p>
                 {/* 文頭が埋め込みの値でも大丈夫 */}
