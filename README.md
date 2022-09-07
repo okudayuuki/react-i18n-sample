@@ -10,6 +10,9 @@
 - https://www.i18next.com/translation-function/formatting
 
 ## 翻訳ファイルの書き方
+- 改行は`<br/>`で行う、`\n`は効かない
+
+### サンプル
 
 #### シンプルな翻訳
 
