@@ -21,5 +21,9 @@
   "action": {
     "buy": "買う",
     "sell": "売る"
+  },
+  "containSpace": {
+    "literal": "ここに→　←すぺーす",
+    "escaped": "ここに→&nbsp←すぺーす"
   }
 }

@@ -21,5 +21,10 @@
   "action": {
     "buy": "Buy",
     "sell": "Sell"
+  },
+  "containSpace": {
+    "literal": "space→ ←hare",
+    "escaped": "space→&nbsp←hare",
+    "escaped2": "space→{{&nbsp}}←hare"
   }
 }

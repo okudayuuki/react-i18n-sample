@@ -70,6 +70,17 @@ function App() {
                     </select>
                 </Trans>
             </div>
+            <div>
+                <p>
+                    <Trans i18nKey={"containSpace.literal"}/>
+                </p>
+                <p>
+                    <Trans i18nKey={"containSpace.escaped"}/>
+                </p>
+                <p>
+                <Trans i18nKey={"containSpace.escaped2"}/>
+                </p>
+            </div>
             <button onClick={() => changeLanguage('ja')}>ja</button>
             <button onClick={() => changeLanguage('en')}>en</button>
         </div>
